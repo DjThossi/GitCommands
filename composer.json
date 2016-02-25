@@ -1,0 +1,14 @@
+{
+    "name": "dj_thossi/git-commands",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Thoss",
+            "email": "dj_thossi@web.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"": "src/"}
+    },
+    "require": {}
+}
