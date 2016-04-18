@@ -71,7 +71,7 @@ if ($result !== null) {
     }
 
     $consoleWriter->writeLine($result);
-    
+
     $tag = $consoleQuestions->ask('Which is your next Release tag?', $tag);
 } else {
     $tag = $consoleQuestions->ask('No tags created yet. Which is your fist Release tag?', $tag);
