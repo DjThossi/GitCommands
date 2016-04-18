@@ -3,6 +3,7 @@ namespace Sebastian301082;
 use Sebastian301082\Console\ConsoleQuestions;
 use Sebastian301082\Console\ConsoleReader;
 use Sebastian301082\Console\ConsoleWriter;
+use Sebastian301082\Console\Minor;
 
 /**
  * @author Sebastian Thoss
@@ -34,5 +35,13 @@ class Factory
     private function createConsoleReader()
     {
         return new ConsoleReader();
+    }
+
+    /**
+     * @return Minor
+     */
+    public function createMinor($tags)
+    {
+        return new Minor($tags);
     }
 }
