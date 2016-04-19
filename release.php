@@ -75,7 +75,7 @@ if ($result !== null) {
     $tag = $consoleQuestions->ask('Which is your next Release tag?', $tag);
 } else {
     $tag = $consoleQuestions->ask('No tags created yet. Which is your fist Release tag?', $tag);
-}/*
+}
 $data[WHICH] = $consoleQuestions->ask('Do you want to create Tag (T) or Branch (B)', $data[WHICH]);
 
 `git checkout {$data[SOURCE]} && git pull`;
@@ -84,6 +84,6 @@ if ($data[WHICH] === 'T') {
     `git checkout {$data[DESTINATION]} && git pull && git merge {$tag} && git push origin {$data[DESTINATION]}`;
 }
 
-file_put_contents(__DIR__ . '/cache.php', "<?php \n\n return " . var_export($data, true) . ';');*/
+file_put_contents(__DIR__ . '/cache.php', "<?php \n\n return " . var_export($data, true) . ';');
 
 $consoleWriter->writeLine("Release finished");
