@@ -126,6 +126,8 @@ if ($result !== null) {
     $consoleQuestions->ask('No tags created yet. Which is your fist Release tag?', implode($tag));
 }
 
+    $tag = $consoleQuestions->ask('No tags created yet. Which is your fist Release tag?', $tag);
+
 $data[WHICH] = $consoleQuestions->ask('Do you want to create Tag (T) or Branch (B)', $data[WHICH]);
 
 `git checkout {$data[SOURCE]} && git pull`;
