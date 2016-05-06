@@ -3,7 +3,8 @@ namespace Sebastian301082;
 use Sebastian301082\Console\ConsoleQuestions;
 use Sebastian301082\Console\ConsoleReader;
 use Sebastian301082\Console\ConsoleWriter;
-use Sebastian301082\Console\Minor;
+use Sebastian301082\Console\HighestVersion;
+use Sebastian301082\Console\Increaser;
 
 /**
  * @author Sebastian Thoss
@@ -37,11 +38,13 @@ class Factory
         return new ConsoleReader();
     }
 
-    /**
-     * @return Minor
-     */
-    public function createMinor($tags)
+    public function createHighestVersion()
     {
-        return new Minor($tags);
+        return new HighestVersion();
+    }
+
+    public function createIncreaser()
+    {
+        return new Increaser();
     }
 }
